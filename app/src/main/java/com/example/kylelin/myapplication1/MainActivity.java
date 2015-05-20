@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         inflater.inflate(R.menu.menu_activity_actions,menu);
 //        getMenuInflater().inflate(R.menu.menu_main, menu);
 //        return true;
-        
+
         return  super.onCreateOptionsMenu(menu);
     }
 
@@ -42,6 +42,7 @@ public class MainActivity extends ActionBarActivity {
 
         if(id == R.id.add_user_button){
             Log.e("ActionButtonPressed","--->ActionButtonPressed");
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
